@@ -28,39 +28,12 @@ class ExampleInstrumentedTest(private val catApi: CatApi) {
         assertEquals("org.rsschool.cats", appContext.packageName)
     }
 
-//    @Test
-//    fun stateFragment(){
-//        val state = State("test")
-//        state.updateState()
-//        assertEquals(true, state.checkState())
-//    }
-
     @Test
-    fun testListCat() {
+    fun testGetListCat() {
         val a = MutableLiveData<Response<List<Image>>>()
         GlobalScope.launch(Dispatchers.Main) {
             a.value = catApi.getImages(20, 1)
             assertEquals(20, a.value?.body()?.size)
         }
     }
-
-//    @Test
-//    fun testConnectNet() {
-//
-//        val appContext = InstrumentationRegistry.getInstrumentation().context
-//
-//        GlobalScope.launch(Dispatchers.Main) {
-//            val viewModel = CatViewModel()
-//            viewModel.initContext(appContext)
-//
-//            viewModel?.initContext(appContext)
-//            viewModel?.getNewAddItems()
-//
-//            // Mockito.`when`(viewModel.sorted).thenReturn(viewModel.sorted)
-//
-//            assertEquals(true, viewModel?.connect?.value)
-//
-//        }
-//
-//    }
 }
