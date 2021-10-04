@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue_200"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/load_error_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/load_state_item_error_text"
+        android:textSize="@dimen/load_state_error_text_size" />
+
+    <ProgressBar
+        android:id="@+id/loadProgressBar"
+        style="?android:indeterminateProgressStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/blue_700" />
+
+    <Button
+        android:id="@+id/retryButton"
+        style="@style/LoadStateRetryButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/load_state_retry_button_text" />
+
+</LinearLayout>

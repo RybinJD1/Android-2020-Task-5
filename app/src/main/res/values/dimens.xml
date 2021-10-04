@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_title_text_size">20sp</dimen>
+    <dimen name="fading">9dp</dimen>
+    <dimen name="marge_content">7dp</dimen>
+    <dimen name="load_state_error_text_size">17sp</dimen>
+    <dimen name="no_margin">0dp</dimen>
+    <dimen name="image_size">72dp</dimen>
+    <dimen name="image_height">150dp</dimen>
+    <dimen name="marge">3dp</dimen>
+</resources>
